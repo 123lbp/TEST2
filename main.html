@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/x-admin.css">
+    <style type="text/css">
+        .layui-layout-admin .header{
+            border-bottom: 5px solid #03A9F4; 
+        
+        }
+
+        .layui-side-scroll {
+           background-color: #f3f3f3;
+        }
+
+        .layui-nav {
+           background-color: #f3f3f3;
+      }
+
+      .layui-nav .layui-nav-item a {
+    color: #03A9F4;
+     } 
+
+     .layui-nav-tree .layui-nav-bar {
+    background-color: #03A9F4;
+}
+
+     .layui-nav-tree .layui-nav-child dd.layui-this,.layui-nav-tree .layui-this,.layui-nav-tree .layui-this>a,.layui-nav-tree .layui-this>a:hover{background-color: #03A9F4;color:#fff;}
+    </style>
+</head>
+<body>
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header header header-demo">
+         <div class="layui-main">
+             <a class="logo" href=""></a>
+             <ul class="layui-nav" lay-filter="">
+                 <li class="layui-nav-item"></li>
+                 <li class="layui-nav-item">
+                     <a href="javascript:;">admin</a>
+                     <dl class="layui-nav-child">
+                         <dd><a href="#">个人信息</a></dd>
+                         <dd><a href="#">切换账号</a></dd>
+                         <dd><a href="#">退出</a></dd>
+                     </dl>
+                 </li>
+                 <li class="layui-nav-item x-index">
+                     <a href="">前台首页</a>
+                 </li>
+             </ul>
+         </div>   
+        </div>
+
+        <div class="layui-side layui-bg-block x-index">
+            <div class="layui-side-scroll">
+                <ul class="layui-nav layui-nav-tree site-demo-nav"lay-filter="side">
+                   <!-- 个人信息管理 -->
+                    <li class="layui-nav-item">
+                        <a class="javascript:;" href="javaScript:;" _href="person.html">
+                            <i class="layui-icon" style="top:3px;">&#xe612;</i><cite>个人信息</cite>
+                        </a>
+                    </li>
+                    <!-- <a href=""></a><i></i> -->
+                    <!-- 学生信息管理 -->
+                    <li class="layui-nav-item">
+                        <a class="javascript:;" href="javaScript:;" _href="student.html">
+                            <i class="layui-icon" style="top:3px;">&#xe613;</i><cite>学生信息</cite>
+                        </a>
+                    </li> 
+                    <!-- 宿舍管理 -->
+                    <li class="layui-nav-item">
+                         <a class="javascript:;" href="javaScript:;" _href="loginForm.html">
+                            <i class="layui-icon" style="top:3px;">&#xe62d;</i><cite>宿舍管理</cite>
+                        </a>
+                    </li>  
+                </ul>
+            </div>
+        </div>
+
+            <div class="layui-tab layui-tab-card site-demo-title x-main" lay-filter="x-tab"lay-allowclose="true">
+                    <div class="x-slide_left"></div>
+                <ul class="layui-tab-title">
+                    <li class="layui-this">
+                        个人信息
+                        <i class="layui-icon layui-unselect layui-tab-close">ဆ</i>
+                    </li>
+                </ul>
+                <div class="layui-tab-content site-demo site-demo-body">
+                    <div class="layui-tab-item layui-show">
+                        <iframe frameborder="0" src="person.html" class="x-iframe"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="site-mobile-shade">
+            </div>
+        </div>
+
+    <script src="lib/layui/layui.js" charset="UTF-8"></script>
+    <script src="js/x-admin.js"></script>
+    <script>
+    var_hmt = _hmt || [];
+    (function(){
+        var hm = document.createElement("script");
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm,s);
+    })();
+    </script>
+</body>
+</html>
